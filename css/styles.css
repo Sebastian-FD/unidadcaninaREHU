@@ -1,0 +1,372 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fondoPag {
+    background-color: #ffffff;
+}
+
+.navbar {
+  min-height: 80px;
+  background-color: #0B1F3A;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ffc107;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+.btn-donar {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(238, 90, 111, 0.4);
+    margin-left: auto;
+    margin-right: 20px;
+    border: 2px solid transparent;
+}
+
+.btn-donar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 90, 111, 0.6);
+    background: linear-gradient(135deg, #ee5a6f, #ff6b6b);
+    color: white !important;
+}
+
+.btn-donar:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(238, 90, 111, 0.5);
+}
+
+.iconCan {
+    margin-left: 60px;
+}
+
+.titlNosText {
+    color: black;
+    margin-top: 20px;
+}
+
+.presNosText {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.objetivo {
+    background-color: #212529;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.objetivo p {
+    color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+}
+
+.titlMap {
+    color: white;
+    text-align: center;
+    margin-left: 0;
+}
+
+.mapadegoogle{
+    margin-left: 650px;
+}
+
+.titlContact {
+    color: black;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer ul.list-unstyled {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+footer ul.list-unstyled li {
+    display: inline-block;
+}
+
+footer ul.list-unstyled a {
+    display: inline-block;
+}
+
+.logos_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logos_redes a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logos_redes a p {
+    margin: 0;
+    display: inline-block;
+}
+
+.redesSociales {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+    border-top: 3px solid black;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-logo-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 0 0 auto;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffc107;
+    padding: 10px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.footer-slogan {
+    color: black;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.footer-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+}
+
+.footer-subtitle {
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex: 1;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-section-title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-text {
+    color: black;
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-text img {
+    flex-shrink: 0;
+}
+
+.footer-social {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-social-title {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social-list li {
+    list-style: none;
+}
+
+.footer-social-list a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-list a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom p,
+.footer-bottom h6 {
+    color: black;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.noticias {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.titleNot {
+    margin-bottom: 30px;
+}
+
+.noticias-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.noticias-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.noticias-image {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.noticias-dark {
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+    max-width: none;
+}
+
+.noticias-dark.noticias-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.noticias-dark .noticias-text {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .noticias-content {
+        flex-direction: column;
+    }
+    
+    .noticias-image {
+        max-width: 100%;
+    }
+}
