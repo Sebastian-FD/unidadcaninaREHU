@@ -2,8 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.fondoPag {
-    background-color: #ffffff;
+body {
+    background-color: whitesmoke;
+    color: white;
 }
 
 .navbar {
@@ -78,8 +79,9 @@ html {
 }
 
 .presNosText {
-    margin-left: 400px;
-    margin-right: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .objetivo {
@@ -89,9 +91,8 @@ html {
 }
 
 .objetivo p {
-    color: white;
-    margin-left: 400px;
-    margin-right: 400px;
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -370,3 +371,84 @@ footer {
         max-width: 100%;
     }
 }
+/* Contenedor grid 2x2 */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Cajas uniformes */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nosotrosBox h1{
+    color:white;
+}
+
+.misionBox h1{
+    color: white;
+}
+
+/* Colores personalizados */
+.nosotrosBox { background-color: #1c2127; }
+.objetivoBox { background-color: #212529; }
+.misionBox   { background-color: #343a40; }
+.visionBox   { background-color: #495057; }
+
+/* Títulos */
+.info-box h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Texto */
+.info-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.info-box:hover {
+  transform: translateY(-10px); /* se eleva un poco */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* sombra más intensa */
+}
+
+.separador {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 60px 0 20px;
+  color: black;
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
